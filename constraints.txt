@@ -10,7 +10,7 @@ pdfkit
 wise.msfd==4.5
 eea.privacyscreen
 collective.relationhelpers
-plone.autoinclude = 2.0.0
+plone.autoinclude == 2.0.0
 
 plone.restapi==9.6.1
 plone.rest==4.1.3
