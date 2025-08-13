@@ -8,17 +8,11 @@
 # Core Plone packages
 plone.app.imagecropping
 plone.tiles
-plone.autoinclude
-plone.restapi
-plone.rest
-plone.volto
-plone.api
+# Core Plone packages (restapi, rest, volto, api) managed by Plone 6 constraints
 
 # EEA packages
 eea.api.dataconnector
-eea.restapi
 eea.coremetadata
-eea.volto.policy
 
 # Development packages (git sources)
 # eea.privacyscreen - REMOVED: Not compatible with Python 3/Plone 6
@@ -32,13 +26,5 @@ collective.z3cform.datagridfield
 
 # Third-party packages
 pdfkit
-rdflib-jsonld
-SQLAlchemy
-openpyxl
-ijson
-hurry.filesize
-zope.sqlalchemy
-pymssql
 
 # WISE packages
-wise.msfd

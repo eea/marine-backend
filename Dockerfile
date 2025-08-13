@@ -1,6 +1,9 @@
 FROM eeacms/plone-backend:6.0.13-7
 
 ENV GRAYLOG_FACILITY=wise-plone
+ENV SECURITY_POLICY_IMPLEMENTATION=C 
+ENV VERBOSE_SECURITY=off
+ENV DEFAULT_ZPUBLISHER_ENCODING=utf-8
 
 COPY requirements.txt constraints.txt /app/
 COPY docker-entrypoint-wkhtmltopdf.sh /usr/local/bin/
