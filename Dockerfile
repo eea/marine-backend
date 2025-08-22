@@ -1,4 +1,4 @@
-FROM eeacms/plone-backend:6.0.13-7
+FROM eeacms/plone-backend:6.0.15-18
 
 ENV GRAYLOG_FACILITY=wise-plone
 ENV SECURITY_POLICY_IMPLEMENTATION=C 
