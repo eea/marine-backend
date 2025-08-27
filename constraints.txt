@@ -34,7 +34,7 @@
 # plone.api - managed by Plone 6 constraints
 
 # EEA packages with versions
-eea.api.dataconnector==11.5
+eea.api.dataconnector==12.1
 
 # WISE packages
 # wise.msfd==4.7  # Using git branch instead: git+https://github.com/eea/wise.msfd.git@python3
