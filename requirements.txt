@@ -28,3 +28,4 @@ collective.z3cform.datagridfield
 pdfkit
 
 # WISE packages
+wise.msfd

@@ -1,4 +1,4 @@
-FROM eeacms/plone-backend:6.0.13-7
+FROM eeacms/plone-backend:6.0.15-18
 
 RUN runDeps="vim tmux mc" \
  && apt-get update \
@@ -11,4 +11,4 @@ COPY sources.ini /app/
 RUN bin/pip install "mxdev>=3.0.0" \
  && bin/mxdev -c sources.ini \
  && bin/pip install -r requirements-mxdev.txt \
- && find /app -not -user plone -exec chown plone:plone {} \+
+ && find /app -not -user plone -exec chown -h plone:plone {} \+

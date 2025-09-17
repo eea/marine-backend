@@ -37,7 +37,7 @@
 eea.api.dataconnector==12.3
 
 # WISE packages
-# wise.msfd==4.7  # Using git branch instead: git+https://github.com/eea/wise.msfd.git@python3
+wise.msfd==6.0  # Using git branch instead: git+https://github.com/eea/wise.msfd.git@python3
 
 # Collective packages - updated versions for Plone 6
 
