@@ -35,22 +35,29 @@
 
 # EEA packages with versions
 eea.api.dataconnector==12.3
+eea.restapi==2.9
+eea.plotly==2.0
+eea.coremetadata==5.3
+eea.volto.policy==8.4
+eea.progress.workflow==3.0
 
 # WISE packages
 wise.msfd==6.1
 
 # Collective packages - updated versions for Plone 6
+collective.exportimport==1.15
+collective.relationhelpers==1.6
 
 # collective.z3cform.datagridfield - managed by Plone 6 constraints
 
 # Third-party packages with versions
-rdflib-jsonld==0.6.2
-SQLAlchemy==1.4.46
-openpyxl==3.0.10
-ijson==3.2.0.post0
-hurry.filesize==0.9
+# rdflib-jsonld==0.6.2
+# SQLAlchemy==1.4.46
+# openpyxl==3.0.10
+# ijson==3.2.0.post0
+# hurry.filesize==0.9
 # zope.sqlalchemy - let Plone 6 constraints decide
-pymssql==2.2.8
+# pymssql==2.2.8
 
 # Keep z3c.form constraint to avoid compatibility issues
 #z3c.form<4.0

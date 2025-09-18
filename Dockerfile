@@ -24,4 +24,4 @@ ENV WKHTMLTOPDF_PATH=/usr/local/bin/docker-entrypoint-wkhtmltopdf.sh
 
 # Install Python packages
 RUN ./bin/pip install -r requirements.txt -c constraints.txt ${PIP_PARAMS} \
-    && find /app -not -user plone -exec chown plone:plone {} \+
+    && find /app -not -user plone -exec chown -h plone:plone {} \+
