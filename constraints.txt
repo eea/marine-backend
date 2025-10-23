@@ -42,7 +42,7 @@ eea.volto.policy==9.0
 eea.progress.workflow==3.0
 
 # WISE packages
-wise.msfd==6.6
+wise.msfd @ git+https://github.com/eea/wise.msfd.git@plone6-prod
 
 # Collective packages - updated versions for Plone 6
 collective.exportimport==1.15
