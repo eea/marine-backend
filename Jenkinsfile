@@ -1,8 +1,12 @@
 pipeline {
-  environment {
-    registry = 'eeacms/marine-backend'
-    template = 'templates/marine-backend'
-    GIT_NAME = 'marine-backend'
+   environment {
+    IMAGE_NAME = "eeacms/marine-backend"
+    GIT_NAME = "marine-backend"
+    // SONARQUBE_TAG = 'water.europa.eu-marine'
+    // SONARQUBE_TAG_DEMO = 'demo-water.devel5cph.eea.europa.eu-marine'
+    RANCHER_STACKID = ""
+    RANCHER_ENVID = ""
+    template = "templates/marine-backend"
   }
 
   agent any
