@@ -11,6 +11,13 @@ COPY docker-entrypoint-wkhtmltopdf.sh /usr/local/bin/
 # Install wkhtmltopdf and dependencies
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+    gcc \
+    g++ \
+    make \
+    freetds-dev \
+    libssl-dev \
+    libffi-dev \
+    unixodbc-dev \
     wkhtmltopdf \
     xvfb \
     fonts-dejavu-core \
