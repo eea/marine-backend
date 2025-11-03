@@ -1,4 +1,4 @@
-FROM eeacms/plone-backend:6.0.15-18
+FROM eeacms/plone-backend:6.1.3-2
 
 ENV GRAYLOG_FACILITY=wise-plone
 ENV SECURITY_POLICY_IMPLEMENTATION=C 
@@ -11,10 +11,10 @@ COPY docker-entrypoint-wkhtmltopdf.sh /usr/local/bin/
 # Install wkhtmltopdf and dependencies
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        wkhtmltopdf \
-        xvfb \
-        fonts-dejavu-core \
-        fontconfig \
+    wkhtmltopdf \
+    xvfb \
+    fonts-dejavu-core \
+    fontconfig \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && chmod +x /usr/local/bin/docker-entrypoint-wkhtmltopdf.sh
