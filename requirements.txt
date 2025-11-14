@@ -17,6 +17,7 @@ eea.plotly
 eea.coremetadata
 eea.volto.policy
 eea.progress.workflow
+eea.api.visualizationutils
 
 # Development packages (git sources)
 # eea.privacyscreen - REMOVED: Not compatible with Python 3/Plone 6

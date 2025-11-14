@@ -40,6 +40,7 @@ eea.plotly==2.0
 eea.coremetadata==5.3
 eea.volto.policy==9.1
 eea.progress.workflow==3.0
+eea.api.visualizationutils==1.0
 
 # WISE packages
 wise.msfd==6.6
