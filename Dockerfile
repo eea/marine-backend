@@ -3,4 +3,5 @@ FROM plone/plone-backend:6.1.3 as base
 COPY requirements.txt constraints.txt /app/
 # COPY /develop/etc /app/etc
 RUN ./bin/pip install -r requirements.txt -c constraints.txt ${PIP_PARAMS} \
+    && ./bin/pip install git+https://github.com/eea/wise.msfd@pymsql2.3.0 \
     && find /app -not -user plone -exec chown plone:plone {} \+
