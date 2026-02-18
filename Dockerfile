@@ -31,4 +31,5 @@ ENV WKHTMLTOPDF_PATH=/usr/local/bin/docker-entrypoint-wkhtmltopdf.sh
 
 # Install Python packages
 RUN ./bin/pip install -r requirements.txt -c constraints.txt ${PIP_PARAMS} \
+    && ./bin/pip install git+https://github.com/eea/wise.msfd@pymsql2.3.0 \
     && find /app -not -user plone -exec chown -h plone:plone {} \+
