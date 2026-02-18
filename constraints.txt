@@ -43,7 +43,7 @@ eea.progress.workflow==3.1
 eea.api.visualizationutils==1.4
 
 # WISE packages
-wise.msfd==6.8
+# wise.msfd is installed from git in requirements.txt
 
 # Collective packages - updated versions for Plone 6
 collective.exportimport==1.15
@@ -58,7 +58,6 @@ collective.relationhelpers==1.6
 # ijson==3.2.0.post0
 # hurry.filesize==0.9
 # zope.sqlalchemy - let Plone 6 constraints decide
-# pymssql==2.2.8
 
 # Keep z3c.form constraint to avoid compatibility issues
 #z3c.form<4.0

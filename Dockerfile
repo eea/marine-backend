@@ -28,6 +28,8 @@ RUN apt-get update \
 
 # Set wkhtmltopdf path environment variable to use our wrapper
 ENV WKHTMLTOPDF_PATH=/usr/local/bin/docker-entrypoint-wkhtmltopdf.sh
+# Ensure build isolation subprocesses also honor constraints (pymssql/Cython)
+ENV PIP_CONSTRAINT=/app/constraints.txt
 
 # Install Python packages
 RUN ./bin/pip install -r requirements.txt -c constraints.txt ${PIP_PARAMS} \
