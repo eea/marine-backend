@@ -33,8 +33,4 @@ ENV PIP_CONSTRAINT=/app/constraints.txt
 
 # Install Python packages
 RUN ./bin/pip install -r requirements.txt -c constraints.txt ${PIP_PARAMS} \
-<<<<<<< HEAD
-=======
-    && ./bin/pip install git+https://github.com/eea/wise.msfd@pymsql2.3.0 \
->>>>>>> 617510b45bf8b15d88444a43961d6e8a16debc33
     && find /app -not -user plone -exec chown -h plone:plone {} \+
