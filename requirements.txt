@@ -31,4 +31,4 @@ collective.relationhelpers
 # pdfkit
 
 # WISE packages
-# wise.msfd
+wise.msfd
