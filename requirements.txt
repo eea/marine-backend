@@ -31,4 +31,4 @@ collective.relationhelpers
 # pdfkit
 
 # WISE packages
-wise.msfd @ git+https://github.com/eea/wise.msfd.git@pymsql2.3.0
+wise.msfd
