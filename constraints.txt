@@ -34,16 +34,16 @@
 # plone.api - managed by Plone 6 constraints
 
 # EEA packages with versions
-eea.api.dataconnector==12.4
+eea.api.dataconnector==12.5
 eea.restapi==2.9
 eea.plotly==2.2
-eea.coremetadata==5.3
-eea.volto.policy==9.3
+eea.coremetadata==5.4
+eea.volto.policy==11.2
 eea.progress.workflow==3.1
-eea.api.visualizationutils==1.3
+eea.api.visualizationutils==1.4
 
 # WISE packages
-wise.msfd==6.6
+wise.msfd==6.9
 
 # Collective packages - updated versions for Plone 6
 collective.exportimport==1.15
@@ -58,7 +58,6 @@ collective.relationhelpers==1.6
 # ijson==3.2.0.post0
 # hurry.filesize==0.9
 # zope.sqlalchemy - let Plone 6 constraints decide
-# pymssql==2.2.8
 
 # Keep z3c.form constraint to avoid compatibility issues
 #z3c.form<4.0
