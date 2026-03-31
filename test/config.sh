@@ -8,13 +8,13 @@ globalTests+=(
 imageTests+=(
 	[eeacms/marine-backend]='
 		plone-basics
-		plone-site
 		plone-addons
 		plone-cors
 		plone-arbitrary-user
 		plone-listenport
 		plone-zeoclient
 		plone-relstorage
+		plone-site
 	'
 )
 
