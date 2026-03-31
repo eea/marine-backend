@@ -3,6 +3,7 @@ set -eo pipefail
 
 dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
+image="$1"
 
 PLONE_TEST_SLEEP=10
 PLONE_TEST_TRIES=20
