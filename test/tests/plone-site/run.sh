@@ -6,7 +6,7 @@ dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 image="$1"
 
 PLONE_TEST_SLEEP=10
-PLONE_TEST_TRIES=20
+PLONE_TEST_TRIES=10
 
 cname="plone-container-$RANDOM-$RANDOM"
 site="Plone$RANDOM"
@@ -30,7 +30,12 @@ get_auth() {
 }
 
 
+
+# Wait for Plone root to be up
 . "$dir/../../retry.sh" --tries "$PLONE_TEST_TRIES" --sleep "$PLONE_TEST_SLEEP" get "http://plone:8080"
 
-# Plone is up and running
+# Wait for the created Plone site to be up
+. "$dir/../../retry.sh" --tries "$PLONE_TEST_TRIES" --sleep "$PLONE_TEST_SLEEP" get "http://plone:8080/$site"
+
+# Plone site is up and running
 [[ "$(get "http://plone:8080/$site")" == *"Welcome to"* ]]
