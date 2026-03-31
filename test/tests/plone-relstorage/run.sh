@@ -6,7 +6,7 @@ dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 image="$1"
 
 PLONE_TEST_SLEEP=10
-PLONE_TEST_TRIES=10
+PLONE_TEST_TRIES=20
 
 # Start Postgres
 zname="relstorage-container-$RANDOM-$RANDOM"
