@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.1.4-4](https://github.com/eea/marine-backend/releases/tag/6.1.4-4) - 2026-05-08T23:37:19Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.6 ~ 12.7
+
+* Fix: list index out of range
+  [avoinea - sentry #420262]
+
+
 ## [6.1.4-3](https://github.com/eea/marine-backend/releases/tag/6.1.4-3) - 2026-05-06T23:35:20Z
 
 ### Dependency updates
