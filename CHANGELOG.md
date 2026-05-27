@@ -1,6 +1,35 @@
 # Changelog
 
 
+## [6.1.4-8](https://github.com/eea/marine-backend/releases/tag/6.1.4-8) - 2026-05-27T23:55:39Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-3 ~ 6.1.4-4 
+
+##### eeacms/plone-backend:[6.1.4-4](https://github.com/eea/plone-backend/releases/tag/6.1.4-4)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.6 ~ 12.7
+
+* Fix: Override Plone search RSS template to use feed item title property
+ [dobri1408]
+
+### Dependency updates
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 2.3 ~ 2.4
+
+* Change: Implement eea.genai.summary customization
+  [razvanMiu]
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.6 ~ 12.7
+
+* Fix: Override Plone search RSS template to use feed item title property
+  [dobri1408]
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 7.9 ~ 8.0
+
+
 ## [6.1.4-7](https://github.com/eea/marine-backend/releases/tag/6.1.4-7) - 2026-05-22T00:30:58Z
 
 ### Plone
