@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [6.1.4-14](https://github.com/eea/marine-backend/releases/tag/6.1.4-14) - 2026-06-10T00:11:20Z
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.7 ~ 12.8
+
+* Fix: return 404 from ``@connector-data`` for content without a connector
+  data provider instead of raising ``ValueError``
+  [dobri1408]
+
+
 ## [6.1.4-13](https://github.com/eea/marine-backend/releases/tag/6.1.4-13) - 2026-06-04T10:10:20Z
 
 ### Plone
