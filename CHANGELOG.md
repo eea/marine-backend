@@ -1,6 +1,83 @@
 # Changelog
 
 
+## [6.1.4-21](https://github.com/eea/marine-backend/releases/tag/6.1.4-21) - 2026-06-25T23:57:18Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-6 ~ 6.1.4-7 
+
+##### eeacms/plone-backend:[6.1.4-7](https://github.com/eea/plone-backend/releases/tag/6.1.4-7)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 5.5 ~ 6.0
+
+* Feature: Add IGeoCoverageField marker interface on geo_coverage field
+ for scoped serializer adapter registration in eea.volto.policy
+ [avoinea - refs #296992]
+
+###### [eea.geolocation](https://github.com/eea/eea.geolocation/releases): 3.0 ~ 4.0
+
+* Feature: Add grouped geographic coverage helper methos
+ [tedw87 - refs #296992]
+* Change: Drop Python 2.7 and Plone 4 support.
+ [avoinea - refs #296992]
+* Fix: Replace lossy latin-1 encoding with explicit PATH_SEPARATOR stripping
+ in taxonomy value normalization
+ [avoinea - refs #296992]
+* Feature: Add RAM caching (plone.memoize) to geotags, biotags and country
+ mappings taxonomy parsing
+ [avoinea - refs #296992]
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.7 ~ 13.0
+
+* Feature: Scope geo_coverage serializer to IGeoCoverageField marker interface
+ instead of all JSON fields. Add eea.geolocation as explicit dependency.
+ [avoinea - refs #296992]
+* Feature: Serialize grouped geographic coverage
+ [tedw87 - refs #296992]
+
+### Dependency updates
+
+##### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 5.5 ~ 6.0
+
+* Feature: Add IGeoCoverageField marker interface on geo_coverage field
+  for scoped serializer adapter registration in eea.volto.policy
+  [avoinea - refs #296992]
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.7 ~ 13.0
+
+* Feature: Scope geo_coverage serializer to IGeoCoverageField marker interface
+  instead of all JSON fields. Add eea.geolocation as explicit dependency.
+  [avoinea - refs #296992]
+* Feature: Serialize grouped geographic coverage
+  [tedw87 - refs #296992]
+
+
+## [6.1.4-20](https://github.com/eea/marine-backend/releases/tag/6.1.4-20) - 2026-06-24T17:24:03Z
+
+### Dependency updates
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 8.9 ~ 9.0
+
+
+## [6.1.4-19](https://github.com/eea/marine-backend/releases/tag/6.1.4-19) - 2026-06-18T01:07:41Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-5 ~ 6.1.4-6 
+
+##### eeacms/plone-backend:[6.1.4-6](https://github.com/eea/plone-backend/releases/tag/6.1.4-6)
+###### Dependency updates
+
+###### [eea.geolocation](https://github.com/eea/eea.geolocation/releases): 2.8 ~ 3.0
+
+* New: Add EEA40 member states group (EEA38 + Ukraine + Moldova) to
+ geotags taxonomy. Includes upgrade step for existing sites and
+ updated VDEX profile for new installations.
+ [avoinea - refs #304772]
+
+
 ## [6.1.4-14](https://github.com/eea/marine-backend/releases/tag/6.1.4-14) - 2026-06-10T00:11:20Z
 
 ### Dependency updates
