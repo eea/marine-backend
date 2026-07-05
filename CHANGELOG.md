@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.1.4-23](https://github.com/eea/marine-backend/releases/tag/6.1.4-23) - 2026-07-05T01:19:08Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-7 ~ 6.1.4-8 
+
+##### eeacms/plone-backend:[6.1.4-8](https://github.com/eea/plone-backend/releases/tag/6.1.4-8)
+###### Internal
+
+- use postgres 14 - [valentinab25 - [`a94bc84`](https://github.com/eea/plone-backend/commit/a94bc84848c3928f235c3667030b8041a20a06be)]
+
+
 ## [6.1.4-21](https://github.com/eea/marine-backend/releases/tag/6.1.4-21) - 2026-06-25T23:57:18Z
 
 ### Plone
