@@ -1,6 +1,32 @@
 # Changelog
 
 
+## [6.1.4-24](https://github.com/eea/marine-backend/releases/tag/6.1.4-24) - 2026-07-08T00:05:35Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-8 ~ 6.1.4-9 
+
+##### eeacms/plone-backend:[6.1.4-9](https://github.com/eea/plone-backend/releases/tag/6.1.4-9)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.0 ~ 13.1
+
+* Fix: Normalize internal backend URLs (e.g. backend:8080) saved in volto blocks
+ by SSR to avoid broken links. Add unit tests for URL normalizer.
+ [razvanMiu - refs #305419]
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.0 ~ 13.1
+
+* Fix: Normalize internal backend URLs (e.g. backend:8080) saved in volto blocks
+  by SSR to avoid broken links. Add unit tests for URL normalizer.
+  [razvanMiu - refs #305419]
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 9.2 ~ 9.3
+
+
 ## [6.1.4-23](https://github.com/eea/marine-backend/releases/tag/6.1.4-23) - 2026-07-05T01:19:08Z
 
 ### Plone
