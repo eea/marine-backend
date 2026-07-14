@@ -1,6 +1,161 @@
 # Changelog
 
 
+## [6.1.4-26](https://github.com/eea/marine-backend/releases/tag/6.1.4-26) - 2026-07-14T01:22:07Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-10 ~ 6.1.4-11 
+
+##### eeacms/plone-backend:[6.1.4-11](https://github.com/eea/plone-backend/releases/tag/6.1.4-11)
+###### Dependency updates
+
+###### [eea.api.controlpanel](https://github.com/eea/eea.api.controlpanel/releases): 1.3 ~ 1.4
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.api.glossary](https://pypi.org/project/eea.api.glossary/#changelog): 1.6 ~ 1.7
+
+###### [eea.api.layout](https://github.com/eea/eea.api.layout/releases): 3.4 ~ 3.5
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.banner](https://github.com/eea/eea.banner/releases): 1.7 ~ 1.8
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.0 ~ 6.1
+
+* Feature: Add the Publication type taxonomy, search configuration,
+ content-type behavior activation and CSV content migration report.
+ [refs #305522]
+
+###### [eea.geolocation](https://github.com/eea/eea.geolocation/releases): 4.0 ~ 4.1
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.kitkat](https://github.com/eea/eea.kitkat/releases): 8.4 ~ 8.5
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.schema.slate](https://github.com/eea/eea.schema.slate/releases): 1.3 ~ 1.4
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.sentry](https://github.com/eea/eea.sentry/releases): 3.1 ~ 3.2
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.2 ~ 13.3
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+###### [eea.zotero](https://github.com/eea/eea.zotero/releases): 1.5 ~ 1.6
+
+* Change: fix: SonarQube report - refs #305404
+ [avoinea]
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.8 ~ 12.9
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+##### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.0 ~ 6.1
+
+* Feature: Add the Publication type taxonomy, search configuration,
+  content-type behavior activation and CSV content migration report.
+  [refs #305522]
+
+##### [eea.plotly](https://github.com/eea/eea.plotly/releases): 2.4 ~ 2.5
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+##### [eea.progress.workflow](https://github.com/eea/eea.progress.workflow/releases): 3.2 ~ 3.3
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.2 ~ 13.3
+
+* Change: fix: SonarQube report - refs #305404
+  [avoinea]
+
+
+## [6.1.4-25](https://github.com/eea/marine-backend/releases/tag/6.1.4-25) - 2026-07-11T23:54:43Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-9 ~ 6.1.4-10 
+
+##### eeacms/plone-backend:[6.1.4-10](https://github.com/eea/plone-backend/releases/tag/6.1.4-10)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.1 ~ 13.2
+
+* Fix: Delegate to collective.exportimport's image serializers when one of its
+ export markers is present on the request.
+ [claudiaifrim - refs #304938]
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.1 ~ 13.2
+
+* Fix: Delegate to collective.exportimport's image serializers when one of its
+  export markers is present on the request.
+  [claudiaifrim - refs #304938]
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 9.3 ~ 9.4
+
+
+## [6.1.4-24](https://github.com/eea/marine-backend/releases/tag/6.1.4-24) - 2026-07-08T00:05:35Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-8 ~ 6.1.4-9 
+
+##### eeacms/plone-backend:[6.1.4-9](https://github.com/eea/plone-backend/releases/tag/6.1.4-9)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.0 ~ 13.1
+
+* Fix: Normalize internal backend URLs (e.g. backend:8080) saved in volto blocks
+ by SSR to avoid broken links. Add unit tests for URL normalizer.
+ [razvanMiu - refs #305419]
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.0 ~ 13.1
+
+* Fix: Normalize internal backend URLs (e.g. backend:8080) saved in volto blocks
+  by SSR to avoid broken links. Add unit tests for URL normalizer.
+  [razvanMiu - refs #305419]
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 9.2 ~ 9.3
+
+
+## [6.1.4-23](https://github.com/eea/marine-backend/releases/tag/6.1.4-23) - 2026-07-05T01:19:08Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-7 ~ 6.1.4-8 
+
+##### eeacms/plone-backend:[6.1.4-8](https://github.com/eea/plone-backend/releases/tag/6.1.4-8)
+###### Internal
+
+- use postgres 14 - [valentinab25 - [`a94bc84`](https://github.com/eea/plone-backend/commit/a94bc84848c3928f235c3667030b8041a20a06be)]
+
+
 ## [6.1.4-21](https://github.com/eea/marine-backend/releases/tag/6.1.4-21) - 2026-06-25T23:57:18Z
 
 ### Plone
