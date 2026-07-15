@@ -1,6 +1,35 @@
 # Changelog
 
 
+## [6.1.4-27](https://github.com/eea/marine-backend/releases/tag/6.1.4-27) - 2026-07-15T00:41:34Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-11 ~ 6.1.4-12 
+
+##### eeacms/plone-backend:[6.1.4-12](https://github.com/eea/plone-backend/releases/tag/6.1.4-12)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.1 ~ 6.2
+
+* Change: Replace the generated Publication type taxonomy field with the
+ dedicated ``publication_type`` behavior and migrate its catalog and
+ search configuration.
+ [dobri1408]
+
+### Dependency updates
+
+##### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.1 ~ 6.2
+
+* Change: Replace the generated Publication type taxonomy field with the
+  dedicated ``publication_type`` behavior and migrate its catalog and
+  search configuration.
+  [dobri1408]
+
+### Internal
+
+- fix: Add betterleaks github action - refs #304517 - [dobri1408 -  [`5f11b7d`](https://github.com/eea/marine-backend/commit/5f11b7d998fc8b763862322726fc2a7f1befebcb)]
+
 ## [6.1.4-26](https://github.com/eea/marine-backend/releases/tag/6.1.4-26) - 2026-07-14T01:22:07Z
 
 ### Plone
