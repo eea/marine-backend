@@ -1,6 +1,32 @@
 # Changelog
 
 
+## [6.1.4-36](https://github.com/eea/marine-backend/releases/tag/6.1.4-36) - 2026-08-07T00:04:49Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-13 ~ 6.1.4-14 
+
+##### eeacms/plone-backend:[6.1.4-14](https://github.com/eea/plone-backend/releases/tag/6.1.4-14)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.3 ~ 13.4
+
+* Fix: Override ``@@download`` view to return 404 instead of TypeError (500)
+ when the content type has no primary file field.
+ [avoinea - refs #306552]
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.3 ~ 13.4
+
+* Fix: Override ``@@download`` view to return 404 instead of TypeError (500)
+  when the content type has no primary file field.
+  [avoinea - refs #306552]
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 10.3 ~ 10.4
+
+
 ## [6.1.4-32](https://github.com/eea/marine-backend/releases/tag/6.1.4-32) - 2026-07-24T00:07:45Z
 
 ### Dependency updates
