@@ -1,6 +1,34 @@
 # Changelog
 
 
+## [6.1.4-37](https://github.com/eea/marine-backend/releases/tag/6.1.4-37) - 2026-08-09T00:05:07Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-14 ~ 6.1.4-16 
+
+##### eeacms/plone-backend:[6.1.4-16](https://github.com/eea/plone-backend/releases/tag/6.1.4-16)
+###### Internal
+
+- fix: arm64 image builds on github actions - [Alin Voinea - [`35cd2ff`](https://github.com/eea/plone-backend/commit/35cd2ff11bafcc6b19b5fb2425903f94acbee89b)]
+##### eeacms/plone-backend:[6.1.4-15](https://github.com/eea/plone-backend/releases/tag/6.1.4-15)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.3 ~ 6.4
+
+* Change: Release
+ [dobri1408]
+
+### Dependency updates
+
+##### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.3 ~ 6.4
+
+* Change: Release
+  [dobri1408]
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 10.4 ~ 10.6
+
+
 ## [6.1.4-36](https://github.com/eea/marine-backend/releases/tag/6.1.4-36) - 2026-08-07T00:04:49Z
 
 ### Plone
