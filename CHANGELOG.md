@@ -1,6 +1,103 @@
 # Changelog
 
 
+## [6.1.4-37](https://github.com/eea/marine-backend/releases/tag/6.1.4-37) - 2026-08-09T00:05:07Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-14 ~ 6.1.4-16 
+
+##### eeacms/plone-backend:[6.1.4-16](https://github.com/eea/plone-backend/releases/tag/6.1.4-16)
+###### Internal
+
+- fix: arm64 image builds on github actions - [Alin Voinea - [`35cd2ff`](https://github.com/eea/plone-backend/commit/35cd2ff11bafcc6b19b5fb2425903f94acbee89b)]
+##### eeacms/plone-backend:[6.1.4-15](https://github.com/eea/plone-backend/releases/tag/6.1.4-15)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.3 ~ 6.4
+
+* Change: Release
+ [dobri1408]
+
+### Dependency updates
+
+##### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.3 ~ 6.4
+
+* Change: Release
+  [dobri1408]
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 10.4 ~ 10.6
+
+
+## [6.1.4-36](https://github.com/eea/marine-backend/releases/tag/6.1.4-36) - 2026-08-07T00:04:49Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-13 ~ 6.1.4-14 
+
+##### eeacms/plone-backend:[6.1.4-14](https://github.com/eea/plone-backend/releases/tag/6.1.4-14)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.3 ~ 13.4
+
+* Fix: Override ``@@download`` view to return 404 instead of TypeError (500)
+ when the content type has no primary file field.
+ [avoinea - refs #306552]
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.3 ~ 13.4
+
+* Fix: Override ``@@download`` view to return 404 instead of TypeError (500)
+  when the content type has no primary file field.
+  [avoinea - refs #306552]
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 10.3 ~ 10.4
+
+
+## [6.1.4-32](https://github.com/eea/marine-backend/releases/tag/6.1.4-32) - 2026-07-24T00:07:45Z
+
+### Dependency updates
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 9.9 ~ 10.0
+
+
+## [6.1.4-31](https://github.com/eea/marine-backend/releases/tag/6.1.4-31) - 2026-07-22T00:03:44Z
+
+### Dependency updates
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 9.8 ~ 9.9
+
+
+## [6.1.4-27](https://github.com/eea/marine-backend/releases/tag/6.1.4-27) - 2026-07-15T00:41:34Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-11 ~ 6.1.4-12 
+
+##### eeacms/plone-backend:[6.1.4-12](https://github.com/eea/plone-backend/releases/tag/6.1.4-12)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.1 ~ 6.2
+
+* Change: Replace the generated Publication type taxonomy field with the
+ dedicated ``publication_type`` behavior and migrate its catalog and
+ search configuration.
+ [dobri1408]
+
+### Dependency updates
+
+##### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.1 ~ 6.2
+
+* Change: Replace the generated Publication type taxonomy field with the
+  dedicated ``publication_type`` behavior and migrate its catalog and
+  search configuration.
+  [dobri1408]
+
+### Internal
+
+- fix: Add betterleaks github action - refs #304517 - [dobri1408 -  [`5f11b7d`](https://github.com/eea/marine-backend/commit/5f11b7d998fc8b763862322726fc2a7f1befebcb)]
+
 ## [6.1.4-26](https://github.com/eea/marine-backend/releases/tag/6.1.4-26) - 2026-07-14T01:22:07Z
 
 ### Plone
