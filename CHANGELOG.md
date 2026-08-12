@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [6.1.4-39](https://github.com/eea/marine-backend/releases/tag/6.1.4-39) - 2026-08-12T00:02:09Z
+
+### Dependency updates
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 10.7 ~ 10.8
+
+
 ## [6.1.4-38](https://github.com/eea/marine-backend/releases/tag/6.1.4-38) - 2026-08-11T00:13:19Z
 
 ### Dependency updates
