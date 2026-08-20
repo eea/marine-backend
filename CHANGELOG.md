@@ -1,6 +1,84 @@
 # Changelog
 
 
+## [6.1.4-41](https://github.com/eea/marine-backend/releases/tag/6.1.4-41) - 2026-08-20T23:59:12Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-16 ~ 6.1.4-18 
+
+##### eeacms/plone-backend:[6.1.4-18](https://github.com/eea/plone-backend/releases/tag/6.1.4-18)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.6 ~ 13.7
+
+* Fix: Apply ``CACHE_TTL`` consistently to the RAM fallback as well as Redis
+ and Memcached.
+ [razvanMiu]
+##### eeacms/plone-backend:[6.1.4-17](https://github.com/eea/plone-backend/releases/tag/6.1.4-17)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.4 ~ 13.6
+
+* Change: Release Move @siblings endpoint from eea.restapi to eea.volto.policy (#123)
+ [avoinea]
+
+* Change: Own the global ``plone.memoize`` cache chooser and its Redis,
+ Memcached, and RAM backends.
+ [razvanMiu]
+
+###### New packages
+
+###### [redis](https://pypi.org/project/redis/#changelog): 8.1.0
+
+###### Internal
+
+- Add redis==8.1.0 - [Alin Voinea - [`b3f4401`](https://github.com/eea/plone-backend/commit/b3f4401bf365e811a648ceaadade2426eda60049)]
+
+### Dependency updates
+
+##### [eea.api.dataconnector](https://github.com/eea/eea.api.dataconnector/releases): 12.9 ~ 13.0
+
+* Fix: Invalidate memoized connector data when provider content changes; TTL
+  continues to bound staleness of external data sources.
+  [razvanMiu]
+* Fix: normalize empty connector-data responses and validate virtual-page
+  preload envelopes.
+  [razvanMiu]
+* Change: document connector payload as public SSR request identity metadata.
+  [razvanMiu]
+* Change: Move the global ``plone.memoize`` cache policy to
+  ``eea.volto.policy``.
+  [razvanMiu]
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.4 ~ 13.7
+
+* Fix: Apply ``CACHE_TTL`` consistently to the RAM fallback as well as Redis
+  and Memcached.
+  [razvanMiu]
+
+* Change: Release Move @siblings endpoint from eea.restapi to eea.volto.policy (#123)
+  [avoinea]
+
+* Change: Own the global ``plone.memoize`` cache chooser and its Redis,
+  Memcached, and RAM backends.
+  [razvanMiu]
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 10.9 ~ 11.0
+
+#### Removed packages
+
+##### [eea.restapi](https://pypi.org/project/eea.restapi/#changelog): 2.9
+
+### Internal
+
+- Update requirements by removing eea.restapi
+
+Removed 'eea.restapi' from the requirements. - [Laszlo Cseh -  [`d1a2106`](https://github.com/eea/marine-backend/commit/d1a2106ac9fbe34d94246c9dba29bb4e07928b0b)]
+- Remove eea.restapi from constraints.txt
+
+Removed eea.restapi package from constraints. - [Laszlo Cseh -  [`c8e6007`](https://github.com/eea/marine-backend/commit/c8e6007166f792fa9ca04c134e661f5bd985b222)]
+
 ## [6.1.4-40](https://github.com/eea/marine-backend/releases/tag/6.1.4-40) - 2026-08-14T23:58:49Z
 
 ### Dependency updates
