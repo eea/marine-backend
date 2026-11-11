@@ -1,6 +1,264 @@
 # Changelog
 
 
+## [6.1.6-1](https://github.com/eea/marine-backend/releases/tag/6.1.6-1) - 2026-11-10T20:22:30Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.5-1 ~ 6.1.6-1 
+
+##### eeacms/plone-backend:[6.1.6-1](https://github.com/eea/plone-backend/releases/tag/6.1.6-1)
+###### Plone
+
+###### Upgrade 6.1.5 ~ 6.1.6 
+
+* Plone [6.1.6](https://plone.org/download/releases/6.1.6)
+
+###### Internal
+
+- Upgrade Plone backend to 6.1.6
+
+Base image plone/plone-backend:6.1.6, fixing the 20261110 remote code
+execution advisory. Verified on the built image: Products.CMFPlone 6.1.6,
+Products.CMFEditions 4.0.7, Products.MimetypesRegistry 3.0.2,
+plone.batching 2.0.8, plone.restapi 9.15.8 -- the versions named in the
+advisory -- plus AccessControl 7.3 -> 7.7 and RestrictedPython 8.3 -> 9.0,
+whose guarded_sorted/guarded_tuple/guarded_bytes keep bytes/sorted/tuple/zip
+available to restricted code.
+
+No conflicts between constraints.txt and the 6.1.6 dist constraints.
+Full container test suite: 11/11 passed on the built image.
+
+Held back on purpose:
+- collective.taxonomy==3.1.8dev1 (collective/collective.taxonomy#172 open) - [Alin Voinea - [`3134e39`](https://github.com/eea/plone-backend/commit/3134e39fd2f1e59a0f9b56c1f5484485cd619f50)]
+
+
+## [6.1.5-1](https://github.com/eea/marine-backend/releases/tag/6.1.5-1) - 2026-10-30T11:56:43Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-24 ~ 6.1.5-1 
+
+##### eeacms/plone-backend:[6.1.5-1](https://github.com/eea/plone-backend/releases/tag/6.1.5-1)
+###### Plone
+
+###### Upgrade 6.1.4 ~ 6.1.5 
+
+* Plone [6.1.5](https://plone.org/download/releases/6.1.5)
+
+###### Dependency updates
+
+###### [collective.exportimport](https://pypi.org/project/collective.exportimport/#changelog): 1.15 ~ 1.16
+
+###### [dnspython](https://pypi.org/project/dnspython/#changelog): 2.8.0 ~ 2.9.1
+
+###### [eventlet](https://pypi.org/project/eventlet/#changelog): 0.41.0 ~ 0.41.3
+
+###### [greenlet](https://pypi.org/project/greenlet/#changelog): 3.5.0 ~ 3.5.6
+
+###### [ijson](https://pypi.org/project/ijson/#changelog): 3.5.0 ~ 3.6.0
+
+###### [pyasn1](https://pypi.org/project/pyasn1/#changelog): 0.6.3 ~ 0.6.5
+
+###### [python-ldap](https://pypi.org/project/python-ldap/#changelog): 3.4.5 ~ 3.4.8
+
+###### [requests-futures](https://pypi.org/project/requests-futures/#changelog): 1.0.2 ~ 1.1.0
+
+###### [sentry-sdk](https://pypi.org/project/sentry-sdk/#changelog): 2.58.0 ~ 2.73.0
+
+###### Internal
+
+- Upgrade Plone backend to 6.1.5 (#14)
+
+* Upgrade Plone backend to 6.1.5
+
+Base image plone/plone-backend:6.1.5 (last maintenance release of the 6.1 series).
+
+Drop the explicit Products.isurlinportal==3.1.0 install: Plone 6.1.5 already
+ships 3.1.0 (verified on the built image), so the security fix from the
+20260302 advisory now comes from the base image.
+
+* Upgrade picked pins
+
+Patch/minor bumps within the same major:
+python-ldap 3.4.5 -> 3.4.8, collective.exportimport 1.15 -> 1.16,
+amqp 5.3.1 -> 5.4.1, dnspython 2.8.0 -> 2.9.1, eventlet 0.41.0 -> 0.41.3,
+greenlet 3.5.0 -> 3.5.6, ijson 3.5.0 -> 3.6.0, pyasn1 0.6.3 -> 0.6.5,
+requests-futures 1.0.2 -> 1.1.0, sentry-sdk 2.58.0 -> 2.73.0.
+
+Held back on purpose:
+- elasticsearch 8.x / elastic-transport 8.x (9.x requires an ES 9 server)
+- yafowil stack 4.x (must be upgraded together with pas.plugins.*)
+- collective.taxonomy==3.1.8dev1 (collective/collective.taxonomy#172 still open) - [Alin Voinea - [`d2f7142`](https://github.com/eea/plone-backend/commit/d2f71424773f0fc57d1e42a25df7c26e4a40536b)]
+
+
+## [6.1.4-55](https://github.com/eea/marine-backend/releases/tag/6.1.4-55) - 2026-10-30T01:01:38Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-23 ~ 6.1.4-24 
+
+##### eeacms/plone-backend:[6.1.4-24](https://github.com/eea/plone-backend/releases/tag/6.1.4-24)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 14.1 ~ 14.2
+
+* Feature: enrich serialized internal Image blocks with the permission-safe
+ live Image title, lazily classify legacy alt provenance, and remove the
+ transient title again during deserialization (issue #305021).
+ [razvanMiu]
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 14.1 ~ 14.2
+
+* Feature: enrich serialized internal Image blocks with the permission-safe
+  live Image title, lazily classify legacy alt provenance, and remove the
+  transient title again during deserialization (issue #305021).
+  [razvanMiu]
+
+
+## [6.1.4-54](https://github.com/eea/marine-backend/releases/tag/6.1.4-54) - 2026-10-27T20:31:39Z
+
+### Dependency updates
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 11.9 ~ 12.0
+
+
+## [6.1.4-53](https://github.com/eea/marine-backend/releases/tag/6.1.4-53) - 2026-10-02T01:30:18Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-21 ~ 6.1.4-23 
+
+##### eeacms/plone-backend:[6.1.4-23](https://github.com/eea/plone-backend/releases/tag/6.1.4-23)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 14.0 ~ 14.1
+
+* Change: Add children sort_order and sort_on for given portal_types to sort
+ [nileshgulia1]
+##### eeacms/plone-backend:[6.1.4-22](https://github.com/eea/plone-backend/releases/tag/6.1.4-22)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.9 ~ 14.0
+
+* Change: Revert to no subsite logo behavior, not needed 
+ [tedw87]
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.9 ~ 14.1
+
+* Change: Add children sort_order and sort_on for given portal_types to sort
+  [nileshgulia1]
+
+* Change: Revert to no subsite logo behavior, not needed 
+  [tedw87]
+
+
+## [6.1.4-52](https://github.com/eea/marine-backend/releases/tag/6.1.4-52) - 2026-09-30T00:28:59Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-20 ~ 6.1.4-21 
+
+##### eeacms/plone-backend:[6.1.4-21](https://github.com/eea/plone-backend/releases/tag/6.1.4-21)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.8 ~ 13.9
+
+* Change: Release - Restore subsite expansion adapter for subsite_logo_main
+ [tedw87]
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.8 ~ 13.9
+
+* Change: Release - Restore subsite expansion adapter for subsite_logo_main
+  [tedw87]
+
+
+## [6.1.4-51](https://github.com/eea/marine-backend/releases/tag/6.1.4-51) - 2026-09-26T23:56:40Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-19 ~ 6.1.4-20 
+
+##### eeacms/plone-backend:[6.1.4-20](https://github.com/eea/plone-backend/releases/tag/6.1.4-20)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.7 ~ 13.8
+
+* Change: Add Subsite Behaviour, Expose main logo setting in Subsite REST response
+ [tedw87]
+* Feature: Add support for sort_on and sort_order through portal_actions
+ [nileshgulia1]
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 13.7 ~ 13.8
+
+* Change: Add Subsite Behaviour, Expose main logo setting in Subsite REST response
+  [tedw87]
+* Feature: Add support for sort_on and sort_order through portal_actions
+  [nileshgulia1]
+
+
+## [6.1.4-50](https://github.com/eea/marine-backend/releases/tag/6.1.4-50) - 2026-09-19T00:02:12Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.1.4-18 ~ 6.1.4-19 
+
+##### eeacms/plone-backend:[6.1.4-19](https://github.com/eea/plone-backend/releases/tag/6.1.4-19)
+###### Dependency updates
+
+###### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.4 ~ 6.5
+
+* Fix: Load Publication type values in listing block selection criteria.
+ Include an upgrade step to enable vocabulary fetching on existing sites.
+ [refs #305522]
+
+### Dependency updates
+
+##### [eea.coremetadata](https://github.com/eea/eea.coremetadata/releases): 6.4 ~ 6.5
+
+* Fix: Load Publication type values in listing block selection criteria.
+  Include an upgrade step to enable vocabulary fetching on existing sites.
+  [refs #305522]
+
+
+## [6.1.4-49](https://github.com/eea/marine-backend/releases/tag/6.1.4-49) - 2026-09-11T23:59:59Z
+
+### Dependency updates
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 11.8 ~ 11.9
+
+
+## [6.1.4-48](https://github.com/eea/marine-backend/releases/tag/6.1.4-48) - 2026-09-11T00:01:22Z
+
+### Dependency updates
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 11.6 ~ 11.8
+
+
+## [6.1.4-47](https://github.com/eea/marine-backend/releases/tag/6.1.4-47) - 2026-09-10T00:00:33Z
+
+### Dependency updates
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 11.5 ~ 11.6
+
+
+## [6.1.4-46](https://github.com/eea/marine-backend/releases/tag/6.1.4-46) - 2026-09-08T23:55:47Z
+
+### Dependency updates
+
+#### New packages
+
+##### [wise.msfd](https://pypi.org/project/wise.msfd/#changelog): 11.5
+
+
 ## [6.1.4-45](https://github.com/eea/marine-backend/releases/tag/6.1.4-45) - 2026-09-03T00:07:53Z
 
 ### Dependency updates
